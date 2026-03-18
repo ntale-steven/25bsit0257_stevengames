@@ -67,7 +67,7 @@ steven_games/
 ### 1. Clone / Copy Project
 ```bash
 # If using Git:
-git clone https://github.com/ntale-steven/25bsit_stevengames.git
+git clone https://github.com/ntale-steven/25bsit0257_stevengames.git
 
 # Or copy the folder into your htdocs:
 # Windows: C:\xampp\htdocs\steven_games\
