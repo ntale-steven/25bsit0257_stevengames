@@ -67,7 +67,7 @@ steven_games/
 ### 1. Clone / Copy Project
 ```bash
 # If using Git:
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+git clone https://github.com/ntale-steven/25bsit_stevengames.git
 
 # Or copy the folder into your htdocs:
 # Windows: C:\xampp\htdocs\steven_games\
@@ -155,9 +155,7 @@ The SQL file creates:
 
 ---
 
-## 📸 Screenshots
 
-*(Add your terminal/CLI screenshots here as part of your submission)*
 
 ---
 
