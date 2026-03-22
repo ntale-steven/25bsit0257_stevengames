@@ -5,7 +5,9 @@ require_once __DIR__ . '/db.php';
 function requireLogin() {
     if (session_status() === PHP_SESSION_NONE) session_start();
     if (!isset($_SESSION['user_id'])) {
-        header('Location: /login.php');
+        // Use relative path — works on XAMPP subfolders (localhost/steven_games/)
+        $base = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/\\');
+        header('Location: ' . $base . '/login.php');
         exit;
     }
 }
@@ -13,7 +15,8 @@ function requireLogin() {
 function requireAdmin() {
     requireLogin();
     if ($_SESSION['role'] !== 'admin') {
-        header('Location: /index.php');
+        $base = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/\\');
+        header('Location: ' . $base . '/index.php');
         exit;
     }
 }
@@ -34,7 +37,6 @@ function loginUser($username, $password) {
     $_SESSION['username'] = $user['username'];
     $_SESSION['role'] = $user['role'];
 
-    // Update last login
     $db->query("UPDATE users SET last_login = NOW() WHERE id = {$user['id']}");
 
     return ['success' => true, 'role' => $user['role']];
@@ -43,7 +45,6 @@ function loginUser($username, $password) {
 function registerUser($username, $email, $password) {
     $db = getDB();
 
-    // Check duplicate
     $stmt = $db->prepare("SELECT id FROM users WHERE username = ? OR email = ?");
     $stmt->bind_param("ss", $username, $email);
     $stmt->execute();

@@ -1,3 +1,6 @@
+https://github.com/ntale-steven/25bsit0257_stevengames.git
+Ntale steven 25bsit0257
+
 # ⚡ Steven Games
 
 > A feature-rich online gaming platform with user authentication, a player dashboard, and a full admin panel.
@@ -67,7 +70,7 @@ steven_games/
 ### 1. Clone / Copy Project
 ```bash
 # If using Git:
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+git clone https://github.com/ntale-steven/25bsit0257_stevengames.git
 
 # Or copy the folder into your htdocs:
 # Windows: C:\xampp\htdocs\steven_games\
@@ -155,9 +158,7 @@ The SQL file creates:
 
 ---
 
-## 📸 Screenshots
 
-*(Add your terminal/CLI screenshots here as part of your submission)*
 
 ---
 

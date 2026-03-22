@@ -835,3 +835,10 @@ body {
   .admin-main { margin-left: 0; }
   .lb-header, .lb-row { grid-template-columns: 60px 1fr 100px 60px; }
 }
+/* Add to style.css for game icons */
+.game-icon[data-icon="rocket"]::before { content: "🚀"; }
+.game-icon[data-icon="dragon"]::before { content: "🐉"; }
+.game-icon[data-icon="car"]::before { content: "🏎️"; }
+.game-icon[data-icon="puzzle"]::before { content: "🧩"; }
+.game-icon[data-icon="sword"]::before { content: "⚔️"; }
+.game-icon[data-icon="world"]::before { content: "🌍"; }
