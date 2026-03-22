@@ -37,13 +37,13 @@ CREATE TABLE `games` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-INSERT INTO `games` (`id`, `title`, `genre`, `icon`, `description`, `rating`, `plays`, `status`) VALUES
-(1, 'Space Blaster', 'Action',  'rocket', 'Blast enemies across the galaxy in this fast-paced shooter.',        4.9, 12400, 'active'),
-(2, 'Dragon Quest',  'RPG',     'dragon', 'Embark on an epic RPG journey to defeat the ancient dragon lord.',   4.8,  9800, 'active'),
-(3, 'Turbo Race',    'Racing',  'car',    'High-speed racing with 20+ tracks and multiplayer support.',         4.7,  8300, 'active'),
-(4, 'Mind Matrix',   'Puzzle',  'puzzle', 'Challenge your brain with mind-bending puzzles and logic tests.',    4.6,  7100, 'active'),
-(5, 'Battle Arena',  'Fighting','sword',  'Enter the arena and fight your way to the championship title.',      4.9, 11600, 'active'),
-(6, 'World Builder', 'Strategy','world',  'Build, expand, and dominate your own civilisation from scratch.',    4.5,  6400, 'active');
+INSERT INTO `games` (`id`, `title`, `genre`, `icon`, `description`, `rating`, `plays`, `status`, `created_at`) VALUES
+(1, 'Space Blaster', 'Action',   '🚀', 'Blast enemies across the galaxy in this fast-paced shooter.',       4.9, 12400, 'active', '2026-03-18 08:28:30'),
+(2, 'Dragon Quest',  'RPG',      '🐉', 'Embark on an epic RPG journey to defeat the ancient dragon lord.',  4.8,  9800, 'active', '2026-03-18 08:28:30'),
+(3, 'Turbo Race',    'Racing',   '🏎️', 'High-speed racing game with 20+ tracks and multiplayer support.',  4.7,  8300, 'active', '2026-03-18 08:28:30'),
+(4, 'Mind Matrix',   'Puzzle',   '🧩', 'Challenge your brain with mind-bending puzzles and logic tests.',   4.6,  7100, 'active', '2026-03-18 08:28:30'),
+(5, 'Battle Arena',  'Fighting', '⚔️', 'Enter the arena and fight your way to the championship title.',    4.9, 11600, 'active', '2026-03-18 08:28:30'),
+(6, 'World Builder', 'Strategy', '🌍', 'Build, expand, and dominate your own civilisation from scratch.',  4.5,  6400, 'active', '2026-03-18 08:28:30');
 
 -- --------------------------------------------------------
 -- Table: tbl_content  (MILESTONE REQUIREMENT)
